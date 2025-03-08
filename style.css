@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6EAF8; /* Light Blue */
+    min-height: 100vh;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Header */
+header {
+    background-color: #3B5998; /* Dark Blue */
+    text-align: left;
+    padding: 1% 0;
+    padding-left: 3%;
+}
+
+header h1 {
+    color: white;
+    font-size: calc(20px + .7vw);
+    font-family: "Times New Roman", Times, serif;
+}
+
+header p {
+    color: white;
+    font-size: calc(15px + .1vw);
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Navigation */
+nav {
+    background-color: #4A90E2; /* Medium Blue */
+    max-width: 30%;
+    width: 30%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+main {
+    width: 70%;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    min-height: 100vh;
+    background-color: #D6EAF8; /* Light Blue */
+    color: black;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    font-style: italic;
+    font-size: calc(10px + .7vw);
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    background-color: #4A90E2; /* Medium Blue */
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 275%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text Content */
+.text-content {
+    line-height: 1.5;
+    font-size: calc(14px + .3vw);
+    width: 50%;
+}
+
+.description-content {
+    font-size: calc(14px + .3vw);
+    text-align: center;
+    margin: 2% 0;
+    padding: 0 1%;
+}
+
+.description-content a {
+    font-size: calc(16px + .3vw);
+    font-style: italic;
+    color: black;
+}
+
+/* Layout Containers */
+.content-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+main h2 {
+    text-align: center;
+    color: #3B5998; /* Dark Blue */
+    font-size: calc(16px + 1vw);
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 5%;
+}
+
+/* Calculator */
+.calculator-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    border-radius: 10%;
+    gap: 8%;
+}
+
+.calculator-wrapper input {
+    padding: 1%;
+    font-size: calc(2px + 1vw);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 2%;
+    width: calc(20em + 2vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-wrapper button {
+    font-size: calc(2px + 1vw);
+    border: none;
+    background-color: #3B5998; /* Dark Blue */
+    color: white;
+    width: calc(3em + 2vw);
+    height: calc(3em + 2vw);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+}
+
+.calculator-wrapper button:hover {
+    background-color: #2C3E50; /* Darker Blue */
+}
+
+/* Result Text */
+#result {
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+
+/* Images */
+.Homepage-image {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50; /* Dark Navy Blue */
+    text-align: center;
+    padding: 1% 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer h3 {
+    color: white;
+    font-size: calc(15px + .1vw);
+}
+
+/* Section Images */
+.education-image, .coursework-image, .job-image, .achievement-image, .contact-image, .projects-image {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contact2-image {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0);
+}
+
+/* Section Wrappers */
+.education-wrapper, .coursework-wrapper, .job1-wrapper, .job2-wrapper, .achievement1-wrapper, .achievement2-wrapper, .achievement3-wrapper, .contact1-wrapper, .contact2-wrapper, .contact3-wrapper {
+    display: flex;
+    gap: 5%;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Section Text */
+.education-text-content, .coursework-text-content, .job-text-content, .achievement-text-content, .contact-text-content {
+    border-left: 5px solid #3B5998;
+    padding-left: 5%;
+    margin-left: 2%;
+    flex-grow: 1;
+    max-width: 70%;
+}
+
+.projects-text-content {
+    border-left: 5px solid #3B5998;
+    padding-left: 5%;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 750px) {
+    nav {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 0px;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .nav-button {
+        width: auto;
+        height: auto;
+        padding: 1% 5px;
+        line-height: normal;
+    }
+}

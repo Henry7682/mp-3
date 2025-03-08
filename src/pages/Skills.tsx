@@ -3,8 +3,6 @@ import Main from "../components/Main";
 function Skills() {
     return (
         <Main title="Skills">
-            <div className="content-wrapper">
-                <div className="text-content">
                     <h3>Programming Languages</h3>
                     <table className="skills-table">
                         <tbody>
@@ -46,8 +44,6 @@ function Skills() {
                         </tr>
                         </tbody>
                     </table>
-                </div>
-            </div>
         </Main>
     );
 }

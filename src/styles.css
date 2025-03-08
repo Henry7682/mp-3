@@ -100,7 +100,6 @@ footer {
 
 .content-wrapper {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   flex-direction: row;
   width: 100%;
@@ -158,8 +157,13 @@ a {
 }
 
 .reference-table {
-  margin: 20px auto;
-  width: 80%;
+  margin-top: 10%;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  width: 75%;
+  height: 30%;
   border-collapse: collapse;
 }
 
@@ -286,6 +290,7 @@ a {
   }
   main{
     width: 100%;
+    height: 100%;
   }
   header{
     /* Centers the text in the header for small screens */

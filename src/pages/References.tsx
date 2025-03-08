@@ -3,8 +3,6 @@ import Main from "../components/Main";
 function References() {
     return (
         <Main title="Professional References">
-            <div className="content-wrapper">
-                <div className="text-content">
                     <table className="reference-table">
                         <thead>
                         <tr>
@@ -58,8 +56,6 @@ function References() {
                         </tr>
                         </tbody>
                     </table>
-                </div>
-            </div>
         </Main>
     );
 }
